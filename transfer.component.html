@@ -1,0 +1,30 @@
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Transfer Details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      
+      <form  (submit)="onSubmit1(transferForm)" #transferForm=ngForm >
+        <mat-form-field>
+            <input matInput type="text" name="to_team" ngModel  placeholder="Enter the team the player is getting transferred to" #to_teamInput="ngModel" required >
+          </mat-form-field>
+            <mat-form-field>
+            <input matInput type="text" name="player" ngModel  placeholder="Name of Player" #playerInput="ngModel" required>
+            </mat-form-field> 
+            <mat-form-field>
+                <input matInput type="number" name="amount" ngModel  placeholder="Amount in lakhs" #amountInput="ngModel" required>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput type="text" name="nationality" ngModel  placeholder="Enter nationality" #nationalityInput="ngModel" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="number" name="playerid" ngModel  placeholder="Enter new player id" #playeridInput="ngModel" required>
+                        </mat-form-field>
+          <button mat-raised-button color='warn' type="submit" >Submit</button>
+          
+    </form>
+
+    </mat-expansion-panel>
+  </mat-accordion>

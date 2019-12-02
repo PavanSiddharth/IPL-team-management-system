@@ -1,0 +1,39 @@
+
+<div >
+    
+    <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Signup
+            </mat-panel-title>
+            <mat-panel-description>
+              Enter email and password
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          
+          <form  (submit)="onSignup(signupForm)" #signupForm=ngForm >
+            <mat-form-field>
+                <input matInput type="email" name="email" ngModel  placeholder="E-Mail" #emailInput="ngModel" required email>
+                <mat-error *ngIf="emailInput.invalid">Please enter a valid email</mat-error>
+              </mat-form-field>
+                <mat-form-field>
+                    <input type="password" name="password" ngModel matInput placeholder="password" #passwordInput="ngModel" required>
+                    <mat-error *ngIf="passwordInput.invalid">Please enter a valid password</mat-error>
+                </mat-form-field> 
+              <button mat-raised-button color='warn' type="submit" >Signup</button>
+              
+        </form>
+     
+      
+          <!--<form action="http://localhost:3000/register" method="post">
+            <input type="email" name="email" placeholder="Email Id" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit">
+          </form>-->
+
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+        
+        

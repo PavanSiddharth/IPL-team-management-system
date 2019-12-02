@@ -1,0 +1,55 @@
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Add Player Details
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      
+      <form  (submit)="onSubmit1(playerdetailsForm)" #playerdetailsForm=ngForm >
+        <mat-form-field>
+            <input matInput type="number" name="jno" ngModel  placeholder="Jersey Number" #jnoInput="ngModel" required >
+          </mat-form-field>
+            <mat-form-field>
+            <input matInput type="text" name="name" ngModel  placeholder="Name" #nameInput="ngModel" required>
+            </mat-form-field> 
+            <mat-form-field>
+            <input matInput type="number" name="age" ngModel  placeholder="Age" #ageInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput type="text" name="role" ngModel  placeholder="Role" #roleInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput type="number" name="worth" ngModel  placeholder="Worth in lakhs" #worthInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+            <input matInput type="text" name="nationality" ngModel  placeholder="Nationality" #nationalityInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="matches" ngModel  placeholder="Matches Played" #matchesInput="ngModel" required>
+                </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="runs" ngModel  placeholder="Runs Scored" #runsInput="ngModel" required>
+            </mat-form-field>  
+            <mat-form-field>
+                <input matInput type="number" name="bataverage" ngModel  placeholder="Bat Average" #bataverageInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="highscore" ngModel  placeholder="High Score" #highscoreInput="ngModel" required>
+                </mat-form-field>  
+            
+            <mat-form-field>
+                <input matInput type="number" name="wickets" ngModel  placeholder="Wickets" #wicketsInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="number" name="bowlaverage" ngModel  placeholder="Bowl Average" #bowlaverageInput="ngModel" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="text" name="bestfigures" ngModel  placeholder="Best Figures" #bestfiguresInput="ngModel" required>
+            </mat-form-field>
+          <button mat-raised-button color='warn' type="submit" >Add Details</button>
+          
+    </form>
+
+    </mat-expansion-panel>
+  </mat-accordion>

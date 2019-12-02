@@ -1,0 +1,56 @@
+
+<mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Edit Player Details
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          
+          <form  (submit)="onSubmit1(playerdetailsForm)" #playerdetailsForm=ngForm >
+            <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats"    matInput type="number" name="jno"  [(ngModel)]="x.jerseyno" placeholder="Jersey Number"   #jnoInput="ngModel"  >
+              </mat-form-field>
+                <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats" matInput type="text" name="name"  [(ngModel)]="x.name" placeholder="Name"   #nameInput="ngModel" >
+                </mat-form-field> 
+                <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="age"  [(ngModel)]="x.age" placeholder="Age"  #ageInput="ngModel" >
+                </mat-form-field>
+                <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats" matInput type="text" name="role"  [(ngModel)]="x.role" placeholder="Role"  #roleInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="worth"  [(ngModel)]="x.worth" placeholder="Worth in lakhs"  #worthInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                <input  *ngFor="let x of playerstats.playerstats" matInput type="text" name="nationality"  [(ngModel)]="x.nationality" placeholder="Nationality"  #nationalityInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="matches"  [(ngModel)]="x.matchesplayed" placeholder="Matches Played"  #matchesInput="ngModel">
+                    </mat-form-field>
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="runs"  [(ngModel)]="x.runs" placeholder="Runs Scored"  #runsInput="ngModel">
+                </mat-form-field>  
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="bataverage"  [(ngModel)]="x.bataverage" placeholder="Bat Average"  #bataverageInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="highscore"  [(ngModel)]="x.highscore" placeholder="High Score"  #highscoreInput="ngModel">
+                    </mat-form-field>  
+                
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="wickets"  [(ngModel)]="x.wickets" placeholder="Wickets"  #wicketsInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="number" name="bowlaverage"  [(ngModel)]="x.bowlaverage" placeholder="Bowl Average"  #bowlaverageInput="ngModel">
+                </mat-form-field>
+                <mat-form-field>
+                    <input  *ngFor="let x of playerstats.playerstats" matInput type="text" name="bestfigures"  [(ngModel)]="x.bestfigures" placeholder="Best Figures"  #bestfiguresInput="ngModel">
+                </mat-form-field>
+              <button mat-raised-button color='warn' type="submit" >Edit Details</button>
+              
+        </form>
+    
+        </mat-expansion-panel>
+      </mat-accordion>

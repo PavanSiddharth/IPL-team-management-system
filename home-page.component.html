@@ -1,0 +1,40 @@
+
+ <mat-toolbar color='accent'>
+    <div style="margin:auto;color:darkblue">INDIAN PREMIER LEAGUE</div>
+ </mat-toolbar>
+ 
+ 
+ <mat-nav-list>
+    <mat-list-item  *ngFor="let team of teams.teams">
+       <a  class="a" (click)=onclick(team.name) routerLink='/teamheader'>{{ team?.name}}</a>
+       
+    </mat-list-item>
+  </mat-nav-list>
+
+  
+ 
+ <!--<div class="teams">
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Royal Challengers Bangalore</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Chennai Super Kings</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Mumbai Indians</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Delhi Daredevils</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Kings XI Punjab</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Rajasthan Royals</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Kolkata Knight Riders</a>
+</div>
+<div class="teams" >
+    <a mat-button color="primary"  style="width:100%;font-size:20px;" [routerLink]="/team">Deccan Chargers</a>
+</div>-->
+ 

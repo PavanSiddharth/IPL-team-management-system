@@ -1,0 +1,88 @@
+
+
+<!--<mat-nav-list>
+    <mat-list-item  *ngFor="let player of players.teams">
+       <a style="text-align: center;" [(ngModel)]="player" ngDefaultControl>{{ player?.jno}}</a>-->
+<!--<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: Helvetica Neue, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 0.2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>-->
+      <mat-accordion>
+          <mat-expansion-panel [disabled]="isDisabled">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+    <ul style="list-style: none;">
+      <li>
+        Jersey No.
+      </li>
+      <li>
+          Name
+        </li>
+      <li>
+          Age
+        </li>
+        <li>
+            Role
+          </li>
+          <li>
+              Worth(in lakhs)
+            </li>
+            <li>
+                Nationality
+              </li>
+    </ul>
+              </mat-panel-title>
+  </mat-expansion-panel-header>
+</mat-expansion-panel>
+</mat-accordion>
+  <ul *ngFor="let player of players.teams" style="list-style: none;">
+      <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  <li>{{player?.jno}}</li>
+                  <li>{{player?.name}}</li>
+                  <li>{{player?.age}}</li>
+                  <li>{{player?.role}}</li>
+                  <li>{{player?.worth}}</li>
+                  <li>{{player?.nationality}}</li>
+              </mat-panel-title>
+
+            </mat-expansion-panel-header>
+            <mat-action-row >
+                <button mat-raised-button color="warn" (click)="onEdit(player.jno)" routerLink="/edit">Edit</button>
+              <button mat-raised-button color="warn" (click)="onView(player.jno)" routerLink="/playerstats">View Details</button>
+              <button mat-raised-button color='warn' (click)="onDelete(player.jno)" >Delete</button>
+            </mat-action-row>
+            
+          </mat-expansion-panel>
+          </mat-accordion>
+  </ul>
+    
+  <!--</ul>
+  
+</table>
+
+</body>
+</html>-->
+
+    <!--</mat-list-item>
+  </mat-nav-list>-->
